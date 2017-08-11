@@ -6,7 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.lanou.bean.Car;
 import com.lanou.bean.Person;
-
+/**
+ * 
+ * @author lanou
+ *
+ */
 public class SpringTest {
 	
 	@Test
@@ -20,10 +24,10 @@ public class SpringTest {
 //		
 //		System.out.println(car);
 		
+		//1234567890
 		
 		// 读取appContext配置文件中的信息
-		ApplicationContext aContext = 
-				new ClassPathXmlApplicationContext("appContext.xml");
+		ApplicationContext aContext = new ClassPathXmlApplicationContext("appContext.xml");
 		
 //		Car car = (Car) aContext.getBean("car5");
 		

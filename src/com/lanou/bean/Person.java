@@ -1,5 +1,9 @@
 package com.lanou.bean;
-
+/**
+ * 
+ * @author lanou
+ *
+ */
 public class Person {
 	
 	private Car car;
