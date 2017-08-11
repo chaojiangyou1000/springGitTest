@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- 开发者模式 ，true代表启动 ，false代表停止 -->
+	<constant name="struts.devMode" value="true"/>
+	<!-- namespace：你的访问路径，命名空间在哪里。extends:继承另一个包 -->
+	<package name="default" namespace="/" extends="json-default">
+	
+		<action name="admin_*" class="com.lanou.admin.action.AdminAction" method="{1}">
+			<!-- 处理结果name就是方法的返回值 type就是对接下来的内容处理方式 -->
+			
+			
+			<result name="loginSUCCESS" type="json">					 		
+			         <param name="root">result</param>  				        	
+			</result>
+			  			  
+			<result name="gainMessageSuccess" type="json">
+					 <param name="root">result</param>
+			</result>
+			
+			<result name="modifySUCCESS" type="json">
+					<param name="root">result</param>
+			</result>
+			
+			<result name="donateSUCCESS" type="json">
+					<param name="root">result</param>
+			</result>
+			
+			<result name="getDonateSUCCESS" type="json">
+					<param name="root">result</param>
+			</result>
+			
+			<result name="registerSUCCESS" type="json">
+					<param name="root">result</param>
+			</result>
+			
+			<result name="loginabcSUCCESS" type="json">
+					<param name="root">result</param>			
+			</result>
+			
+			<result name="getUsersNameSUCCESS" type="json">
+					<param name="root">result</param>
+			</result>
+		</action>		
+	</package>
+</struts>

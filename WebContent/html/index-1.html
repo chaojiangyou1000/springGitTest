@@ -1,0 +1,417 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--导航栏-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--轮播-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前台首页</title>
+	<!--轮播-->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../css/demo.css">
+	<link rel="stylesheet" href="../css/app.css">
+						
+	<!--导航栏-->
+	<link rel="stylesheet" href="../css/nav.css" />
+	<SCRIPT src="../js/menu.js" type=text/javascript></SCRIPT>
+	<script src="../js/jquery-3.1.1.js" type="text/javascript"></script>
+					
+		<style type="text/css">		
+				#div2{
+					width: 800px;
+					height: 400px;
+					position: absolute;
+					left: 350px;
+					top: 740px;
+					background-color: ghostwhite;
+				}
+				#div3{
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif;
+				}
+				#div7{
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#div10{
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}		
+				#xs{
+					position: absolute;
+					left: 700px;
+					top: 10px;
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#xs1{
+					position: absolute;
+					left: 1120px;
+					top: 10px;
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#xs2{
+					position: absolute;
+					left: 1110px;
+					top: 10px;
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#div12{
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#xs3{
+					position: absolute;
+					left: 350px;
+					top: 10px;
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#div14{
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#xs4{
+					position: absolute;
+					left: 350px;
+					top: 10px;
+					color: red;
+					font-size: 20px;
+					font-family:"楷体";serif; 
+				}
+				#div15{
+					color: black;
+					font-size: 20px;				
+				}
+				#div16{
+					color: black;
+					font-size: 20px;	
+				}
+				#diva{
+				    width:200px;
+					height:100px;
+					position:absolute;
+					left: 1400px;
+					top: 50px;					
+				}
+				.divb{
+				    width:80px;
+					height:40px;
+					float:left;
+					text-align: center;
+				    line-height: 40px;
+				    background-color:red;
+				    color:white;
+				    font-size: 25px;
+				    font-family:"楷体"; 	
+				}
+				.divb:hover{
+				    background-color:white;
+				    color:red;
+				}
+				.divb a{
+					color:white;
+				}
+				.divb a:hover{				   
+				    color:red; 
+				}
+				#divjz{
+					width:400px;
+					height:40px;
+					position:absolute;
+					left:0px;
+					top:0px;
+					background-color:red;
+				}
+				#divzt{
+					width:90px;
+					height:70px;
+					position:absolute;
+					left:10px;
+					top:10px;
+					font-size:20px;
+					font-family:"楷体";
+				}
+				#divan{
+					position:absolute;
+					left:20px;
+					top:200px;					
+				}
+				#divan1{
+					width:100px;
+					height:40px;
+					position:absolute;
+					left:80px;
+					top:300px;
+					font-size:20px;
+					background-color:red;	
+					font-family:"楷体";	
+					text-align:center;
+					line-height:40px;	
+				}
+				#divan2{
+					width:100px;
+					height:40px;
+					position:absolute;
+					left:230px;
+					top:300px;
+					font-size:20px;
+					background-color:red;
+					font-family:"楷体";
+					text-align:center;
+					line-height:40px;	
+				}
+				#divxsyhm{
+					width: 160px;
+					height:40px;
+					position:absolute;
+					left:1400px;
+					top:90px;
+					background-color:#FF0000;
+					font-size:30px;
+					text-align:center;
+				}
+		</style>
+</head>
+
+<body>
+	
+		<div id="div1"><img src="../images/123.PNG" style="position: absolute;left: 350px;top: 0px;width: 1000px;height: 160px;"/>
+			   <div id="diva">
+			   		<div class="divb"><a href="login.html">登录</a></div>
+			   		<div class="divb"><a href="register.html">注册</a></div>
+			   </div>
+			   <div id="divxsyhm"></div> 
+		</div>
+							
+		<!--导航菜单-->
+		<div class=menu>
+						<a class=select href="#">首页</a>
+						<a onmouseover="mouseover(this, 1)" onmouseout=mouseout() href="#" >新闻资讯</a> 
+						<a onmouseover="mouseover(this, 2)" onmouseout=mouseout() href="#" >机构介绍</a> 
+						<a onmouseover="mouseover(this, 3)" onmouseout=mouseout() href="#" >信息公开</a> 
+						<a onmouseover="mouseover(this, 4)" onmouseout=mouseout() href="#" >志愿者中心</a> 
+						<a onmouseover="mouseover(this, 5)" onmouseout=mouseout() href="#" >爱心档案</a> 
+						<a onmouseover="mouseover(this, 6)" onmouseout=mouseout() href="#">援助中心</a>
+						<a onmouseover="mouseover(this, 7)" onmouseout=mouseout() href="#" >慈善项目</a> 
+						<a onmouseover="mouseover(this, 8)" onmouseout=mouseout() href="#" >公益基金</a> 
+						<a onmouseover="mouseover(this, 9)" onmouseout=mouseout() href="#" >客服中心</a> 
+		</div>
+
+		<div class=menu-list id=menu1 onmouseover=_mouseover() onmouseout=_mouseout()>
+				<UL>
+								  <LI><a href="#"><span>慈善资讯</span></a> 
+								  <LI><a href="#"><span>媒体报道</span></a> 
+								  <LI><a href="#"><span>机构动态</span></a> 
+								  <LI><a href="#"><span>图片新闻</span></a> 
+								  </LI>
+				</UL>
+		</div>
+  
+		<div class=menu-list id=menu2 onmouseover=_mouseover() onmouseout=_mouseout()>
+					<UL>
+								  <LI><a href="#"><span>机构荣誉</span></a> 
+								  <LI><a href="#"><span>组织架构</span></a> 								
+								  </LI>
+					</UL>
+		</div>
+  
+		<div class=menu-list id=menu3 onmouseover=_mouseover() onmouseout=_mouseout()>
+			<UL>
+					  <LI><a href="#"><span>收支明细</span></a> 
+					  <LI><a href="http://www.jingdianfree.com/A/?L-9403771563.Html"><span>年度工作报告</span></a> 
+					  <LI><a href="#"><span>财务会计报告</span></a> 					
+					  </LI>
+			</UL>
+		</div>
+  
+		<div class=menu-list id=menu4 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+								  <LI><a href="#"><span>志愿者动态</span></a> 
+								  <LI><a href="#"><span>志愿者申请</span></a> 
+								  <LI><a href="#"><span>志愿者活动</span></a> 
+								  <LI><a href="#"><span>志愿者团队</span></a> 
+								  </LI>
+						</UL>
+		</div>
+  
+		<div class=menu-list id=menu5 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>爱心个人</span></a> 
+									<LI><a href="#"><span>爱心企业</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+
+		<div class=menu-list id=menu6 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>常见问题</span></a> 
+									<LI><a href="#"><span>在线留言</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+		
+		
+		<!--轮播-->
+		<div class="slider">
+				<div class="slider-img">
+						<ul class="slider-img-ul">
+							<li><img src="../images/20170111095849_0521_1000340.jpg"></li>
+							<li><img src="../images/20170315152856_3914_1000340.jpg"></li>
+							<li><img src="../images/20170505100842_6015_1000340.jpg"></li>
+							<li><img src="../images/20170608111919_6109_1000340.jpg"></li>
+						</ul>
+				</div>
+		</div>
+		
+	 	
+		<div id="div2">
+				<div id="div3" style="position: absolute;left: 10px;top: 10px;"><span>>=新闻资讯</span></div>
+				<a id="xs" href="#">更多>></a>   
+				<div id="div4"><hr style="position: absolute;left: -0px;top: 40px;"/></div>
+				<div id="divw" style="font-size:17px;text-align:center;"></div>			
+		</div>
+		
+		<!--捐赠信息-->
+		<div id="div5" style="position: absolute;left: 1150px;top: 740px; background-color: navajowhite;width: 400px;height: 400px;">
+				<div id="divjz">
+					<div id="divzt">捐赠信息</div>
+				</div>
+				<div id="divan1"><a href="index-3.html">我要捐赠</a></div>					
+				<div id="divan2"><a href="#####">我要求助</a></div>
+		</div>
+		
+		<!--慈善项目-->
+		<div id="div6" style="width: 1200px;height: 300px;position: absolute;left: 350px;top: 1100px;background-color: rosybrown;">
+			    <div id="div7" style="position: absolute;left: 10px;top: 10px;"><span>>=慈善项目</span></div>
+			    <a id="xs1" href="#">更多>></a>
+			    <div id="div8"><hr style="position: relative;left: 0px;top: 40px;"/></div>
+		</div>
+		
+		<div id="div9" style="width: 1200px;height: 320px;position: absolute;left: 350px;top: 1400px;background-color: darkgray;">
+				<div id="div10" style="position: absolute;left: 10px;top: 10px;"><span>>=公益基金</span></div>
+				<a id="xs2" href="#">更多>></a>
+				<div id="div8"><hr style="position: relative;left: 0px;top: 40px;"/></div>
+		</div>
+		
+		<div idk="divx" style="width: 450px;height: 350px;position: absolute;left: 350px;top: 1720px;background-color: gray;">
+				<div id="div12" style="position: absolute;left: 10px;top: 10px;"><span>>=在线捐赠信息</span></div>				
+				<a id="xs3" href="#">更多>></a>
+				<div id="div13"><hr style="position: relative;left: 0px;top: 40px;"/></div>
+				<div id="divget_0" style="width:100px;height:300px;position:absolute;left:5px;top:50px;background-color:red;"></div>
+				<div id="divget_1" style="width:100px;height:300px;position:absolute;left:115px;top:50px;background-color:#CDCD00;font-size:17px;text-align:center;"></div>
+				<div id="divget_2" style="width:100px;height:300px;position:absolute;left:225px;top:50px;background-color:#66CDAA;font-size:17px;text-align:center;"></div>
+				<div id="divget_3" style="width:100px;height:300px;position:absolute;left:335px;top:50px;background-color:#EE00EE;font-size:17px;text-align:center;"></div>
+		</div>
+		
+		<div id="divy" style="width: 450px;height: 350px;position: absolute;left: 805px;top: 1720px;background-color: darkgoldenrod;">
+				<div id="div14" style="position: absolute;left: 10px;top: 10px;"><span>>=线下捐赠信息</span></div>
+				<div id="div13"><hr style="position: relative;left: 0px;top: 40px;"/></div>
+				<a id="xs4" href="#">更多>></a>
+		</div>
+		
+		<div id="divz" style="width: 295px;height: 350px;position: absolute;left: 1255px;top: 1720px;background-color: aquamarine;"></div>
+		
+		<!--合作机构-->
+		<div id="diva" style="width: 1200px;height: 200px;position: absolute;left: 350px;top: 2100px;background-color: #F8F8FF;">
+			    <img src="../images/456.PNG" style="width: 1200px;"/>
+		</div>
+				
+        <div id="divb" style="width: 100%;height: 300px;position: absolute;left: 0px;top: 2355px;background-color: #74777B;">
+        		<img src="../images/20160119095201_0162.jpg" style="width: 100px;height: 100px;position: absolute;left: 1450px;top: 30px;"/>
+        				<div id="div15" style="position: absolute;left: 500px;top: 50px;">       			
+        				 		<ul>
+        				 		 	<li>陕西省慈善协会</li>
+        				 		 	<li>地址：西安市唐延路10号</li>
+        				 		 	<li>陕公网安备 61030302000156号</li>
+        				 		 	<li>陕ICP备10001587号</li>
+        				 		 	<li>电话：0917-2707613</li>
+        				 		 	<li>传真：0917-3252512</li>
+        				 		 	<li>邮编：721004 </li>
+        				 		 	<li>技术支持：北京厚普聚益科技有限公司</li>
+        				 	</ul>
+        				</div>
+        		
+        				<div id="div16" style="position: absolute;left: 1000px;top: 50px;">
+        						<ul>
+        								<li><a href="#">机构章程</a></li>
+        								<li><a href="#">组织架构</a></li>
+        								<li><a href="#">机构荣誉</a></li>
+        								<li><a href="#">机构资质</a></li>
+        								<li><a href="#">大事记</a></li>
+        								<li><a href="#">联系我们</a></li>
+        								<li><a href="#">捐赠方式</a></li>    
+        						</ul>
+        				</div>
+        </div>
+
+</body>
+		
+		<script type="text/javascript" src="../js/xSlider.js"></script>
+		 
+		<script type="text/javascript" >
+		
+		var div2 = document.getElementById("div2");
+		
+		 console.log("好地方2");
+         	  $.ajax({
+         		  	type:"post",         	  
+		         	url: "../admin_gainMessage",
+		         	success:function(res){
+		         		console.log(res);
+		         		console.log(res.list[0].contents);
+		         		$("#divw").html(res.list[5].contents)
+		         		divw.style.width="800px";
+		         		divw.style.height="360px";
+		         		divw.style.position="absolute";
+		         		divw.style.left="0px";
+		         		divw.style.top="40px";
+		         		divw.style.backgroundColor="ghostwhite";
+	 				},
+         	 		error:function(res){
+				  	    console.log(123456789);
+					}
+		     });
+         	  
+         	  
+         	 $.ajax({
+         		  type:"post",
+         	 	  url:"../admin_getDonate",
+         	 	  success:function(res){
+         	 		  console.log(res);
+         	 		  $("#divget_0").html(res.lists[0].time)
+         	 		  $("#divget_1").html(res.lists[0].name)
+         	 		  $("#divget_2").html(res.lists[0].money)
+         	 		  $("#divget_3").html(res.lists[0].type)
+         	 	  },
+         	 	  error:function(res){
+         	 		  console.log(11111111);
+         	 	  }
+         	 }); 
+         	 
+         	 
+         	 $.ajax({
+         		 type:"post",
+         		 url:"../admin_getUsersName",
+         		 success:function(res){
+         			 console.log(res.username);
+         			 $("#divxsyhm").html(res.username)
+         		 },
+         		 erro:function(res){
+         			 console.log(1234567);
+         		 }
+         	 });
+		</script>
+</html>

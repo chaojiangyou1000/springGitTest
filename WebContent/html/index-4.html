@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-cn">
+<head>
+	<!--导航栏-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--轮播-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下拉菜单导航</title>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<!--导航栏-->
+	<link rel="stylesheet" href="../css/nav.css" />
+	<SCRIPT src="../js/menu.js" type=text/javascript></SCRIPT>
+			
+		<style type="text/css">
+				body{
+					width: 1370px;
+					height: 900px;
+				}
+				#div15{
+					color: black;
+					font-size: 20px;				
+				}
+				#div16{
+					color: black;
+					font-size: 20px;	
+				}
+				#divjk{
+					width: 800px;
+					height: 450px;
+					border: 1px solid #CCCCCC;
+					position: absolute;
+					top: 250px;
+					left: 525px;
+				}
+				#divp{
+					width: 150px;
+					height: 50px;
+					position: absolute;
+					left: 100px;
+					top: 30px;
+					font-size: 20px;
+					color: red;
+					font-family: "楷体";
+				}
+				#divl{
+					width: 150px;
+					height: 50px;
+					position: absolute;
+					left: 275px;
+					top: 30px;
+					font-size: 20px;
+					color: green;
+					font-family: "楷体";
+				}
+				#divk{
+					width: 120px;
+					height: 50px;
+					position: absolute;
+					left: 455px;
+					top: 30px;
+					font-size: 20px;
+					color: #9400D3;
+					font-family: "楷体";
+				}	
+				#divj{
+					width: 120px;
+					height: 50px;
+					position: absolute;
+					left: 600px;
+					top: 30px;
+					font-size: 20px;
+					color: #E066FF;
+					font-family: "楷体";
+				}					
+				#diva{
+				    width:200px;
+					height:100px;
+					position:absolute;
+					left: 1600px;
+					top: 60px;					
+				}
+				.divb{
+				    width:80px;
+					height:40px;
+					float:left;
+					text-align: center;
+				    line-height: 40px;
+				    background-color:red;
+				    color:white;
+				    font-size: 25px;
+				    font-family:"楷体"; 	
+				}
+				.divb:hover{
+				    background-color:white;
+				    color:red;
+				}
+				.divb a{
+					color:white;
+				}
+				.divb a:hover{				   
+				    color:red; 
+				}
+				#divbg{
+					width: 730px;
+					height: 389px;
+					border: 1px solid #CCCCCC;
+					position: absolute;
+					left: 35px;
+					top: 60px;
+				}
+				#divbg1{
+					width: 730px;
+					height: 35px;
+					background-color: #BBBBBB;
+					text-align: center;
+					font-size: 22px;
+				}	
+				#divbg2{
+					background-color: #999999;
+				}
+				#th1{
+					text-align: center;
+				}
+				#tbMoney{
+					width: 100px;
+					height: 20px;
+					border-radius: 6px;
+				}
+				#text{
+					width: 350px;
+					height: 50px;
+				}
+				#label{
+					position: absolute;
+					top: 300px;
+					left: 500px;
+				}
+				#inputs{
+					position: absolute;
+					top: 300px;
+					left: 470px;
+				}
+				#divan1{
+					width: 200px;
+					height: 40px;
+					position: absolute;
+					left: 500px;
+					top: 335px;					
+				}
+				#btn{
+					width: 200px;
+					height: 40px;
+					font-family: "微软雅黑";
+					font-size: 27px;
+					text-align: center;
+					background-color: red;
+					border-radius: 6px;					
+				}
+				#inputxm{
+					width: 300px;
+					height: 30px;
+					border-radius: 8px;
+				}
+		</style>
+</head>
+
+<body>
+
+		<div id="diva">
+			   		<div class="divb"><a href="login.html">登录</a></div>
+			   		<div class="divb"><a href="login.html">注册</a></div>
+		</div> 
+	
+		<div id="div1"><img src="../images/123.PNG" style="position: absolute;left: 350px;top: 0px;width: 1200px;height: 160px;"/></div>
+							
+		<!--导航菜单-->
+		<div class=menu>
+						<a class=select href="index-1.html">首页</a>
+						<a onmouseover="mouseover(this, 1)" onmouseout=mouseout() href="#" >新闻资讯</a> 
+						<a onmouseover="mouseover(this, 2)" onmouseout=mouseout() href="#" >机构介绍</a> 
+						<a onmouseover="mouseover(this, 3)" onmouseout=mouseout() href="#" >信息公开</a> 
+						<a onmouseover="mouseover(this, 4)" onmouseout=mouseout() href="#" >志愿者中心</a> 
+						<a onmouseover="mouseover(this, 5)" onmouseout=mouseout() href="#" >爱心档案</a> 
+						<a onmouseover="mouseover(this, 6)" onmouseout=mouseout() href="#">援助中心</a>
+						<a onmouseover="mouseover(this, 7)" onmouseout=mouseout() href="#" >慈善项目</a> 
+						<a onmouseover="mouseover(this, 8)" onmouseout=mouseout() href="#" >公益基金</a> 
+						<a onmouseover="mouseover(this, 9)" onmouseout=mouseout() href="#" >客服中心</a> 
+		</div>
+
+		<div class=menu-list id=menu1 onmouseover=_mouseover() onmouseout=_mouseout()>
+				<UL>
+								  <LI><a href="#"><span>慈善资讯</span></a> 
+								  <LI><a href="#"><span>媒体报道</span></a> 
+								  <LI><a href="#"><span>机构动态</span></a> 
+								  <LI><a href="#"><span>图片新闻</span></a> 
+								  </LI>
+				</UL>
+		</div>
+  
+		<div class=menu-list id=menu2 onmouseover=_mouseover() onmouseout=_mouseout()>
+					<UL>
+								  <LI><a href="#"><span>机构荣誉</span></a> 
+								  <LI><a href="#"><span>组织架构</span></a> 								
+								  </LI>
+					</UL>
+		</div>
+  
+		<div class=menu-list id=menu3 onmouseover=_mouseover() onmouseout=_mouseout()>
+			<UL>
+					  <LI><a href="#"><span>收支明细</span></a> 
+					  <LI><a href="http://www.jingdianfree.com/A/?L-9403771563.Html"><span>年度工作报告</span></a> 
+					  <LI><a href="#"><span>财务会计报告</span></a> 					
+					  </LI>
+			</UL>
+		</div>
+  
+		<div class=menu-list id=menu4 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+								  <LI><a href="#"><span>志愿者动态</span></a> 
+								  <LI><a href="#"><span>志愿者申请</span></a> 
+								  <LI><a href="#"><span>志愿者活动</span></a> 
+								  <LI><a href="#"><span>志愿者团队</span></a> 
+								  </LI>
+						</UL>
+		</div>
+  
+		<div class=menu-list id=menu5 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>爱心个人</span></a> 
+									<LI><a href="#"><span>爱心企业</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+
+		<div class=menu-list id=menu6 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>常见问题</span></a> 
+									<LI><a href="#"><span>在线留言</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+			
+		<div id="divjk">
+			<div id="divp">1.选择捐款项目</div>
+			<div id="divl">2.确认捐款信息</div>
+			<div id="divk">3.在线支付</div>
+			<div id="divj">4.完成捐款</div>
+			<div id="divbg">
+				<div id="divan1">
+					<input type="button" id="btn" value="下一步"/>
+				</div>
+				<div id="divbg1">请正确填写捐款人信息。标注（*）为必填项目。</div>
+				<div id="divbg2">
+					<table>
+						<tbody>
+							<!--表格第一行-->
+							<tr>
+								<th id="th1" width="100px" height="40px" align="left" scope="row">金额(*)</th>
+								<td width="90%">
+									<span id="rtb1Money" class="radiobtnlist">										
+										<input type="radio" id="rtb1Money_0" value="10" name="rtbMoney"/>
+										<label for="rtb1Money_0" style="margin: 0 10px 0 5px;">10</label>
+										<input type="radio" id="rtb1Money_1" value="50" name="rtbMoney"/>
+										<label for="rtb1Money_1" style="margin: 0 10px 0 5px;">50</label>
+										<input type="radio" id="rtb1Money_2" value="100" name="rtbMoney"/>
+										<label for="rtb1Money_2" style="margin: 0 10px 0 5px;">100</label>
+										<input type="radio" id="rtb1Money_3" value="200" name="rtbMoney"/>
+										<label for="rtb1Money_3" style="margin: 0 10px 0 5px;">200</label>
+										<input type="radio" id="rtb1Money_4" value="500" name="rtbMoney"/>
+										<label for="rtb1Money_4" style="margin: 0 10px 0 5px;">500</label>
+										<input type="radio" id="rtb1Money_5" value="1000" name="rtbMoney"/>
+										<label for="rtb1Money_5" style="margin: 0 10px 0 5px;">1000</label>
+										<input type="radio" id="rtb1Money_6" name="rtbMoney"/>
+										<label for="rtb1Money_6" style="margin: 0 10px 0 5px;">其他金额</label>
+									</span>
+									<span id="sp" style="display: inline;">
+										<input type="text" id="tbMoney"/>
+										<span>如：168.5</span>
+									</span>
+								</td>								
+							</tr>
+							<!--表格第二行-->
+							<tr>
+								<th id="th2" scope="row" width="100px" height="40px">
+									<span id="sp1">捐赠项目(*)</span>
+								</th>
+								<td>
+									<span style="font-size: 15px;font-weight: bold;color: #00008B;"></span>
+									<input type="hidden" name="labProjectName" id="labProjectName" />
+									<select name="ddlProjects" id="ddlProject" style="width: 400px;"> 
+										<option value="慈善一日捐">慈善一日捐</option>
+										<option value="关爱亲情缺失儿童少年">关爱亲情缺失儿童少年</option>
+										<option value="慈安桥">慈安桥</option>
+										<option value="扶贫地区产业脱贫项目">扶贫地区产业脱贫项目</option>
+										<option value="爱心关照，空巢老人">爱心关照，空巢老人</option>
+										<option value="困难家庭送温暖">困难家庭送温暖</option>
+										<option value="非定向项目" selected="selected">非定向项目</option>
+									</select>
+								</td>
+							</tr>
+							<!--表格第三行-->
+							<tr>
+								<th id="th3" scope="row" id="th3" height="40px" width="50px">是否匿名</th>
+								<td>
+									<span id="rbtShouName" clas="Radiobtnlist">
+										<input id="rbtShouName_0" type="radio" name="rbtShouName1"/>
+										<label style="margin: 0 10px 0 5px;">匿名</label>
+										<input id="rbtShouName_1" type="radio" name="rbtShouName1"/>
+										<label style="margin: 0 10px 0 5px;">实名</label>
+										<input type="text" id="inputxm" name="rbtShouName1" placeholder="如果你想实名，请输入你的姓名"/>
+									</span>
+								</td>
+							</tr>
+							<!--表格第四行-->
+							<tr>
+								<th id="th4" scope="row" height="40px">是否邮寄发票</th>
+								<td>
+									<span id="aaa" class="bbb">
+										<input id="rtbInvoice" type="radio" name="rtbInvoice2"/>
+										<label style="margin: 0 10px 0 5px;">是</label>
+										<input id="rtbInvoice1" type="radio" checked="checked" name="rtbInvoice2"/>
+										<label style="margin: 0 10px 0 5px;">否</label>
+									</span>
+								</td>
+							</tr>
+							<!--表格第五行-->
+							<tr>
+								<th id="th5" scope="row" height="40px">支付方式(*)</th>
+								<td>
+									<span id="ccc" clsss="ddd">
+										<input id="inpi" type="radio" name="input1" value="1"/>
+										<label style="margin: 0 10px 0 5px;">支付宝</label>
+										<input id="inpl" type="radio" name="input1"/>
+										<label style="margin: 0 10px 0 5px;">微信支付</label>
+									</span>
+								</td>								
+							</tr>
+							<!--表格第六行-->
+							<tr>
+								<th id="th6" scope="row" height="40px">捐赠留言</th>
+								<td>
+									<textarea id="text" style="border-radius: 6px;" placeholder="如果你想留言，请输入您的留言"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<table>
+						<table>
+							<tr>
+								<td>
+									<input id="inputs" type="checkbox" name="input1"/>
+									<label for="ckx" id="label">我已完成以上信息</label>
+								</td>
+							</tr>
+						</table>
+					</table>
+				</div>
+			</div>
+		</div>			
+					
+																						
+        <div id="divb" style="width: 100%;height: 270px;position: absolute;left: 0px;top: 704px;background-color: #74777B;">
+        		<img src="../images/20160119095201_0162.jpg" style="width: 100px;height: 100px;position: absolute;left: 1450px;top: 30px;"/>
+        				<div id="div15" style="position: absolute;left: 500px;top: 35px;">       			
+        				 		<ul>
+        				 		 	<li>陕西省慈善协会</li>
+        				 		 	<li>地址：西安市唐延路10号</li>
+        				 		 	<li>陕公网安备 61030302000156号</li>
+        				 		 	<li>陕ICP备10001587号</li>
+        				 		 	<li>电话：0917-2707613</li>
+        				 		 	<li>传真：0917-3252512</li>
+        				 		 	<li>邮编：721004 </li>
+        				 		 	<li>技术支持：北京厚普聚益科技有限公司</li>
+        				 	</ul>
+        				</div>
+        		
+        				<div id="div16" style="position: absolute;left: 1000px;top: 35px;">
+        						<ul>
+        								<li><a href="#">机构章程</a></li>
+        								<li><a href="#">组织架构</a></li>
+        								<li><a href="#">机构荣誉</a></li>
+        								<li><a href="#">机构资质</a></li>
+        								<li><a href="#">大事记</a></li>
+        								<li><a href="#">联系我们</a></li>
+        								<li><a href="#">捐赠方式</a></li>    
+        						</ul>
+        				</div>
+        </div>
+
+</body>
+	
+	<script type="text/javascript" src="../js/xSlider.js"></script>
+	<script type="text/javascript">
+		
+		 	var btn = document.getElementById("btn")
+		 	btn.onclick = function(){
+		 		var moneys = document.getElementById("tbMoney");
+			 	var names = document.getElementById("inputxm");			 	
+			 	var types = document.getElementById("ddlProject");
+			 	console.log(types.options[types.selectedIndex].value);
+		 		console.log(names.value);
+		 		console.log(moneys.value);
+		 		
+		 		if($("input[name='input1']:checked").val()==null){
+		 			alert("请您选择支付方式");
+		 		}else if($("input[name='input1']:checked").val()==1){
+		 			window.location.href = "https://www.alipay.com/";
+		 		}else{  
+		 			window.location.href = "https://weixin.qq.com/";            
+		 		}
+		 		
+			 	console.log(456);
+			 	$.ajax({
+			 		type:"post",
+			 		url:"../admin_donate",
+			 		data:{"usersDonate.Money":moneys.value,"usersDonate.type":types.options[types.selectedIndex].value,"usersDonate.name":names.value,"usersDonate.time":new Date()},
+			 		success:function(data){
+			 			alert(data.info);
+			 		},
+			 		error:function(data){
+			 			alert(data.info);
+			 		}
+			 	});
+		 	}
+				 	
+	</script>
+</html>

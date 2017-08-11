@@ -1,0 +1,104 @@
+<!--<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>-->
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>管理员登录界面</title>
+  	 <script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<!--   	 <script type="text/javascript" src="../js/index-2-login.js"></script>           -->
+			<style type="text/css">
+							body{								
+								background: url(../images/bg.jpg) fixed center center no-repeat;
+								background-size: cover;
+								width: 100%;
+								margin: 0px;
+							}
+							#diva{
+								width: 350px;
+								height: 350px;
+								background-color: dodgerblue;
+								border-radius: 10px;
+								position: absolute;
+								left: 900px;
+								top: 250px;
+							}
+							#dljm{
+							    color:blue;
+							    font-size:50px;
+							    position:absolute;
+							    left:500px;
+							    top:200px;
+							    font-family:"楷体",serif;
+							}
+							#aqglpt{
+							    color:blue;
+							    font-size:50px;
+							    position:absolute;
+							    left:350px;
+							    top:100px;
+							    font-family:"楷体",serif;
+							}
+							#zjdl{
+			    				color:#D02090	;
+			    				font-size:16px;
+			    				position:absolute;
+			    				left:200px;
+			    				top:215px;
+							}
+							#wjmm{
+								color: #D02090;
+								font-size: 16px;
+								position: absolute;
+								left: 200px;
+								top: 240px;
+							}	
+							#div8{
+								width: 250px;
+								height: 50px;
+								position: absolute;
+								left: 49px;
+								top: 275px;
+								border-radius: 7px;
+								background: #68228B
+							}													
+				</style>
+</head>
+<body>
+               <p id="dljm">管理员登录界面</p>
+			   <p id="aqglpt">欢迎到此一游陕西省慈善协会</p>
+		
+		 	 			
+			   <div id="diva">						
+						<div id="div3"><input id="name" placeholder="用户名" data-validate="required:请填写账号" style="width: 250px; height: 50px; position: absolute;left: 45px; top: 50px;border-radius: 10px;"/></div>
+						<div id="div4"><input id="password" placeholder="密码" data-validate="required:请填写密码" style="width: 250px; height: 50px;position: absolute;left: 45px; top: 130px;border-radius: 10px;"/></div>
+						<input type="button" id="div8"   value="登录" onclick="click1()"/>							
+						
+						<div id="div9"><input type="checkbox"  value="v"  name="a"  style="position: absolute;left:45px;top: 220px;" /></div>
+						<div id="divc" style="position: absolute;left: 80px;top: 217px;">保存并登录</div>
+						<a id="zjdl" href="index-1.html">>>>返回首页</a>
+						
+						<a id="wjmm" href="#">>>>忘记密码</a>
+				</div>		 		 			 		
+</body>
+		<script type="text/javascript">
+			  var name= document.getElementById("name");
+	          var password= document.getElementById("password");
+	       
+	          function click1(){							 
+						  console.log(name.value+":"+password.value);
+				          $.post({
+				        	     url: "../admin_login",
+				          	     data:{"administrator.name": name.value,"administrator.password": password.value},
+				          		 success: function(data){	
+				          			 alert(data.info);
+// 				          			 window.location.href="index.html";
+				          		 },
+				          		 error:function(data){
+				          			 console.log(data);
+				          			
+				          		 }
+				          });				   			 	        		        
+		   }				
+      </script>
+</html>

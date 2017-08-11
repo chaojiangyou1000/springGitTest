@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!--导航栏-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--轮播-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下拉菜单导航</title>
+	
+	<!--导航栏-->
+	<link rel="stylesheet" href="../css/nav.css" />
+	<SCRIPT src="../js/menu.js" type=text/javascript></SCRIPT>
+			
+		<style type="text/css">
+				body{
+					width: 1370px;
+					height: 900px;
+				}
+				#div15{
+					color: black;
+					font-size: 20px;				
+				}
+				#div16{
+					color: black;
+					font-size: 20px;	
+				}
+				#divjk{
+					width: 800px;
+					height: 450px;
+					border: 1px solid #CCCCCC;
+					position: absolute;
+					top: 250px;
+					left: 525px;
+				}
+				#divp{
+					width: 150px;
+					height: 50px;
+					position: absolute;
+					left: 100px;
+					top: 50px;
+					font-size: 20px;
+					color: red;
+					font-family: "楷体";
+				}
+				#divl{
+					width: 150px;
+					height: 50px;
+					position: absolute;
+					left: 275px;
+					top: 50px;
+					font-size: 20px;
+					color: green;
+					font-family: "楷体";
+				}
+				#divk{
+					width: 120px;
+					height: 50px;
+					position: absolute;
+					left: 455px;
+					top: 50px;
+					font-size: 20px;
+					color: #9400D3;
+					font-family: "楷体";
+				}	
+				#divj{
+					width: 120px;
+					height: 50px;
+					position: absolute;
+					left: 600px;
+					top: 50px;
+					font-size: 20px;
+					color: #E066FF;
+					font-family: "楷体";
+				}
+				#divwx{
+					width: 100px;
+					height: 50px;
+					position: absolute;
+					left: 350px;
+					top: 170px;
+					font-size: 25px;
+					color: #DC143C;
+					font-family: "微软雅黑";
+				}
+				#divczt{
+					width: 600px;
+					height: 60px;
+					position: absolute;
+					top: 220px;
+					left: 100px;
+					font-size: 15px;
+					font-family: "微软雅黑";
+				}
+				#divan{
+					width: 80px;
+					height: 35px;
+					position: absolute;
+					left: 300px;
+					top: 300px;
+					background-color: red;
+					font-size: 25px;
+					font-family: "微软雅黑";
+					text-align: center;
+					border-radius: 4px;
+				}
+				#divzj{
+					width: 120px;
+					height: 35px;
+					position: absolute;
+					left: 400px;
+					top: 300px;
+					background-color: red;
+					font-size: 25px;
+					font-family: "微软雅黑";
+					text-align: center;
+					border-radius: 4px;
+				}	
+				#diva{
+				    width:200px;
+					height:100px;
+					position:absolute;
+					left: 1600px;
+					top: 60px;					
+				}
+				.divb{
+				    width:80px;
+					height:40px;
+					float:left;
+					text-align: center;
+				    line-height: 40px;
+				    background-color:red;
+				    color:white;
+				    font-size: 25px;
+				    font-family:"楷体"; 	
+				}
+				.divb:hover{
+				    background-color:white;
+				    color:red;
+				}
+				.divb a{
+					color:white;
+				}
+				.divb a:hover{				   
+				    color:red; 
+				}
+				#div_1{
+					width: 700px;
+					height: 425px;
+					position: absolute;
+					left: 50px;
+					top: 25px;
+				}
+				#divsub{
+					width: 200px;
+					height: 50px;
+					position: absolute;
+					left: 250px;
+					top: 350px;
+					background-color: red;
+					font-size: 20px;
+					border-radius: 5px;
+				}
+		</style>
+</head>
+
+<body>
+
+		<div id="diva">
+			   		<div class="divb"><a href="login.html">登录</a></div>
+			   		<div class="divb"><a href="login.html">注册</a></div>
+		</div> 
+	
+		<div id="div1"><img src="../images/123.PNG" style="position: absolute;left: 350px;top: 0px;width: 1200px;height: 160px;"/></div>
+							
+		<!--导航菜单-->
+		<div class=menu>
+						<a class=select href="index-1.html">首页</a>
+						<a onmouseover="mouseover(this, 1)" onmouseout=mouseout() href="#" >新闻资讯</a> 
+						<a onmouseover="mouseover(this, 2)" onmouseout=mouseout() href="#" >机构介绍</a> 
+						<a onmouseover="mouseover(this, 3)" onmouseout=mouseout() href="#" >信息公开</a> 
+						<a onmouseover="mouseover(this, 4)" onmouseout=mouseout() href="#" >志愿者中心</a> 
+						<a onmouseover="mouseover(this, 5)" onmouseout=mouseout() href="#" >爱心档案</a> 
+						<a onmouseover="mouseover(this, 6)" onmouseout=mouseout() href="#">援助中心</a>
+						<a onmouseover="mouseover(this, 7)" onmouseout=mouseout() href="#" >慈善项目</a> 
+						<a onmouseover="mouseover(this, 8)" onmouseout=mouseout() href="#" >公益基金</a> 
+						<a onmouseover="mouseover(this, 9)" onmouseout=mouseout() href="#" >客服中心</a> 
+		</div>
+
+		<div class=menu-list id=menu1 onmouseover=_mouseover() onmouseout=_mouseout()>
+				<UL>
+								  <LI><a href="#"><span>慈善资讯</span></a> 
+								  <LI><a href="#"><span>媒体报道</span></a> 
+								  <LI><a href="#"><span>机构动态</span></a> 
+								  <LI><a href="#"><span>图片新闻</span></a> 
+								  </LI>
+				</UL>
+		</div>
+  
+		<div class=menu-list id=menu2 onmouseover=_mouseover() onmouseout=_mouseout()>
+					<UL>
+								  <LI><a href="#"><span>机构荣誉</span></a> 
+								  <LI><a href="#"><span>组织架构</span></a> 								
+								  </LI>
+					</UL>
+		</div>
+  
+		<div class=menu-list id=menu3 onmouseover=_mouseover() onmouseout=_mouseout()>
+			<UL>
+					  <LI><a href="#"><span>收支明细</span></a> 
+					  <LI><a href="http://www.jingdianfree.com/A/?L-9403771563.Html"><span>年度工作报告</span></a> 
+					  <LI><a href="#"><span>财务会计报告</span></a> 					
+					  </LI>
+			</UL>
+		</div>
+  
+		<div class=menu-list id=menu4 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+								  <LI><a href="#"><span>志愿者动态</span></a> 
+								  <LI><a href="#"><span>志愿者申请</span></a> 
+								  <LI><a href="#"><span>志愿者活动</span></a> 
+								  <LI><a href="#"><span>志愿者团队</span></a> 
+								  </LI>
+						</UL>
+		</div>
+  
+		<div class=menu-list id=menu5 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>爱心个人</span></a> 
+									<LI><a href="#"><span>爱心企业</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+
+		<div class=menu-list id=menu6 onmouseover=_mouseover() onmouseout=_mouseout()>
+						<UL>
+									<LI><a href="#"><span>常见问题</span></a> 
+									<LI><a href="#"><span>在线留言</span></a> 										 
+									</LI>
+						</UL>
+		</div>
+			
+		<div id="divjk">
+			<div id="div_1">
+				<ul>
+					<div style="position: absolute;left: 100px;top: 50px;">
+						<li>
+							<span class="name"> 用户账号：</span>
+							<span class="kuang">
+								<input  id="username_1" type="text" style="width: 200PX;"/>							
+							</span>
+							<span class="red">*必填</span>
+							<span class="beizhu">请输入登录名，注册后不可更改</span>							
+						</li>
+					</div>	
+					
+					<div style="position: absolute;left: 100px;top: 100px;">
+						<li>
+							<span class="password">登录密码：</span>
+							<span class="kuang">
+								<input id="pwd" type="text" style="width: 200px;"/>
+							</span>
+							<span class="red">*必填</span>
+							<span class="beizhu">请输入登录密码</span>	
+						</li>
+					</div>
+					
+					<div style="position: absolute;left: 100px;top: 150px;">
+						<li>
+							<span class="email">电子邮件：</span>
+							<span class="kuang">
+								<input id="email_1" type="text" style="width: 200px;"/>
+							</span>
+							<span class="red">*必填</span>
+							<span class="beizhu">请输入邮箱</span>	
+						</li>
+					</div>
+					
+					<div style="position: absolute;left: 100px;top: 200px;">
+						<li>
+							<span class="email">手机号码：</span>
+							<span class="kuang">
+								<input id="phone_1" type="text" style="width: 200px;"/>
+							</span>
+							<span class="beizhu">请输入手机号码</span>	
+						</li>
+					</div>
+					
+					<div style="position: absolute;left: 100px;top: 250px;">
+						<li>
+							<span class="email">真实姓名：</span>
+							<span class="kuang">
+								<input id="realname" type="text" style="width: 200px;"/>
+							</span>
+							<span class="beizhu">请输入姓名</span>	
+						</li>
+					</div>
+					
+					<input type="submit" id="divsub" value="立即注册"/>
+				</ul>
+			</div>
+		</div>			
+					
+																						
+        <div id="divb" style="width: 100%;height: 270px;position: absolute;left: 0px;top: 704px;background-color: #74777B;">
+        		<img src="../images/20160119095201_0162.jpg" style="width: 100px;height: 100px;position: absolute;left: 1450px;top: 30px;"/>
+        				<div id="div15" style="position: absolute;left: 500px;top: 35px;">       			
+        				 		<ul>
+        				 		 	<li>陕西省慈善协会</li>
+        				 		 	<li>地址：西安市唐延路10号</li>
+        				 		 	<li>陕公网安备 61030302000156号</li>
+        				 		 	<li>陕ICP备10001587号</li>
+        				 		 	<li>电话：0917-2707613</li>
+        				 		 	<li>传真：0917-3252512</li>
+        				 		 	<li>邮编：721004 </li>
+        				 		 	<li>技术支持：北京厚普聚益科技有限公司</li>
+        				 	</ul>
+        				</div>
+        		
+        				<div id="div16" style="position: absolute;left: 1000px;top: 35px;">
+        						<ul>
+        								<li><a href="#">机构章程</a></li>
+        								<li><a href="#">组织架构</a></li>
+        								<li><a href="#">机构荣誉</a></li>
+        								<li><a href="#">机构资质</a></li>
+        								<li><a href="#">大事记</a></li>
+        								<li><a href="#">联系我们</a></li>
+        								<li><a href="#">捐赠方式</a></li>    
+        						</ul>
+        				</div>
+        </div>
+<script src="../js/jquery-3.1.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/xSlider.js"></script>
+</body>
+		<script type="text/javascript">
+			
+			var btn = document.getElementById("divsub");
+			btn.onclick = function(){
+				var names = document.getElementById("username_1");
+				var pwd = document.getElementById("pwd");
+				var emails = document.getElementById("email_1");
+				var phone = document.getElementById("phone_1");
+				var realName = document.getElementById("realname");
+				
+				console.log(names.value);
+				console.log(pwd.value);
+				console.log(emails.value);
+				if (names.value == "") {
+					alert("请输入用户账号");
+				} else if (pwd.value == "") {
+					alert("请输入密码");
+				}else if (emails.value == "") {
+					alert("请输入邮箱");
+				}
+				
+				$.ajax({
+					type:"post",
+					url:"../admin_register",
+					async:true,
+					data:{"users.names":names.value,"users.pwd":pwd.value,"users.email":emails.value,
+					"users.phone":phone.value,"users.realNames":realName.value},
+					success:function(data) {
+						alert(data.info);
+						window.location.href = "loginUser.html";
+					},
+					error:function(data){
+						alert(data.info);
+					}
+				});
+			}
+		</script>
+</html>

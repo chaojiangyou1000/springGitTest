@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title>后台发表信息平台</title>
+<script src="../js/jquery-3.1.1.js"></script>  
+<!-- <script src="../js/page.js"></script>   -->
+			<style type="text/css">
+					     #div1{
+					     		width: 100%;
+					     		height: 40px;
+					     		position: absolute;
+					     		left: 0px;
+					     		top: 25px;
+					     		background-color: #F5F5F5;
+					     }
+					     #div2{
+					     		width: 70px;
+					     		height: 20px;
+					     		position: absolute;
+					     		left: 60px;
+					     		top: 10px;
+					     }
+					     #label{
+					     		position: absolute;
+					     		left: 100px;
+					     		top: 100px;
+					     		font-size: 20px;
+					     }
+					     #field{
+					     	   	width: 500px;
+					     	   	height: 50px;
+					     	   	position: absolute;
+					     	   	left: 120px;
+					     	   	top: 155px;
+					     }
+					     #input1{
+					     	 	width: 500px;
+					     	 	height: 35px;
+					     	 	position: absolute;
+					     	 	left: 60px;
+					     	 	top: -60px;
+					     }
+					     .labels{
+					     		position: absolute;
+					     		left: 100px;
+					     		top: 200px;
+					     		font-size: 20px;
+					     }
+					     #url1{
+					     		width: 500px;
+					     		height: 35px;
+					     		position: absolute;
+					     		left: 180px;
+					     		top: 193px;
+					     }
+					     #image1{
+					     		width: 120px;
+					     		height: 40px;
+					     		position: absolute;
+					     		left: 180px;
+					     		top: 250px;
+					     		background-color: #08BBE1;
+					     		border-radius: 6px;
+					     }
+					     #tipss{
+					     		position: absolute;
+					     		left: 310px;
+					     		top: 255px;
+					     }
+					     .label2{
+					     		 position: absolute;
+					     		 left: 100px;
+					     		 top: 340px;
+					     		 font-size: 20px;
+					     }
+					     #ta{
+					     		 width: 850px;
+					     		 height: 300px;
+					     		 position: absolute;
+					     		 left: 180px;
+					     		 top: 380px;
+					     }
+					     #button{
+					     		 width: 120px;
+					     		 height: 40px;
+					     		 position: absolute;
+					     		 left: 180px;
+					     		 top: 720px;
+					     		 background-color: #08BBE1;
+					     		 border-radius: 6px;
+					     }
+			</style>
+</head>
+<body>
+					<div class="panel admin-panel">
+  							<div id="div1"><hr style="position: relative;left: 0px;top: 30px;"/>
+  									<div id="div2"><strong><span class="icon-pencil-square-o"></span> 单页信息</strong></div>
+  							</div>			
+  														   						     											      												
+        					<div id="label">
+          							<label>标题：</label>
+        					</div>
+        														
+        					<div id="field">
+          							<input type="text" id="input1" name="title"/>    															
+        					</div>
+        													
+     						<div class="labels">
+          							<label>图片：</label>
+        					</div>
+        														  														
+          					<input type="text" id="url1" />
+          					<input type="submit" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" >
+          					<div id="tipss">图片尺寸：500*200</div>         															 						     								
+       						
+        					<div class="label2">
+          							<label>内容：</label>
+        					</div>
+        															       					   											
+          					<textarea id="ta" name="content" placeholder="请输入内容------" ></textarea> 
+          														
+          					<input id="button" type="button" value="提交" onclick="clik()">
+					</div>
+</body>
+			<script type="text/javascript">
+						//（发布新闻）向数据库插入数据的方法
+						function clik(){		
+							 var ta=document.getElementById("ta");
+							 var input1=document.getElementById("input1");
+							 console.log("好地方1");
+					         $.post({			         
+					        	     url: "../admin_insertAd" ,
+					        	     async:true,
+					        	     data:{"literal.title" : input1.value, "literal.contents": ta.value} ,
+					        	     success:function(data){
+					        	    	   alert(data.info);
+									},
+									error:function(data){
+										   alert(data.info);
+									}
+					         });
+					         
+					        
+					}
+			</script>
+</html>
